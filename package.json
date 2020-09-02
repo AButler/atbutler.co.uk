@@ -5,13 +5,17 @@
   "license": "MIT",
   "author": "Andrew Butler",
   "scripts": {
-    "build": "parcel build index.html",
+    "copy-static": "copyfiles download/* favicon.ico web.config humans.txt robots.txt dist",
+    "build": "parcel build index.html 404.html && npm run copy-static",
     "dev": "parcel index.html --open",
     "start": "npm run build && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "copyfiles": "^2.3.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.1.1",
+    "typescript": "^4.0.2"
   },
   "dependencies": {}
 }
