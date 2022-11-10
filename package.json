@@ -4,6 +4,7 @@
   "description": "atbutler.co.uk website",
   "license": "MIT",
   "author": "Andrew Butler",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "copy-static": "copyfiles download/* favicon.ico web.config humans.txt robots.txt dist",
     "build": "parcel build index.html 404.html && npm run copy-static",
@@ -13,9 +14,8 @@
   },
   "devDependencies": {
     "copyfiles": "^2.3.0",
-    "parcel-bundler": "^1.12.4",
     "prettier": "2.1.1",
-    "typescript": "^4.0.2"
-  },
-  "dependencies": {}
+    "typescript": "^4.0.2",
+    "parcel": "^2.8.0"
+  }
 }
