@@ -9,6 +9,8 @@ interface Project {
 }
 
 function App() {
+  const version = import.meta.env.VITE_APP_INFORMATIONAL_VERSION || "0.0.0-dev";
+
   const projects: Project[] = [
     {
       emoji: "🦦",
@@ -145,7 +147,10 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>&copy; 2025 Andrew Butler. Built with React & Vite.</p>
+        <p>
+          &copy; 2025 Andrew Butler &middot; Built with React & Vite &middot; v
+          {version}
+        </p>
       </footer>
     </div>
   );
