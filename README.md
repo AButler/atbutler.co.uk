@@ -4,12 +4,8 @@ This repository contains the source to my website [atbutler.co.uk](https://atbut
 
 ## How to build
 
-1. Run `npm build`
+1. Run `npm run build`
 
 ## How to develop
 
-1. Run `npm start`
-
-## Thanks
-
-This website uses [Bulma](https://bulma.io/), [Parcel](https://parceljs.org/), [Modernizr](https://modernizr.com/) and [HTML5 Boilerplate](https://html5boilerplate.com/).
+1. Run `npm run dev`
