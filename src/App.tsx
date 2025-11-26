@@ -17,29 +17,29 @@ function App() {
       name: "LogOtter",
       description:
         "A collection of libraries to help create modern microservices using CosmosDB and Event Sourcing and the tools to test them.",
-      technologies: [".NET", "CosmosDB", "Event Sourcing", "Microservices"],
+      technologies: [".NET", "CosmosDB", "Event Sourcing", "Testing"],
       link: "https://github.com/LogOtter/log-otter",
     },
     {
       emoji: "💻",
       name: "Kong Portal CLI",
       description:
-        "A CLI tool for pushing API Products, Versions & Documents to Kong Konnect",
-      technologies: ["CLI", "Kong", "API Management"],
+        "A CLI tool for pushing API Products, Versions & Documents to Kong Konnect. Best for automating Kong Portal setup in CI/CD pipelines.",
+      technologies: ["CLI", "Kong", "CI/CD", "Automation"],
       link: "https://github.com/AButler/kong-portal-cli",
     },
     {
       emoji: "👷‍♂️",
       name: "OpenApiValidate",
       description:
-        "A dotnet library for validating whether an API response matches against an OpenAPI document",
-      technologies: [".NET", "OpenAPI", "API Validation"],
+        "A dotnet library for validating whether an API response matches against an OpenAPI document. Great for component/integration testing.",
+      technologies: [".NET", "OpenAPI", "Validation", "Testing"],
       link: "https://github.com/AButler/openapi-validate",
     },
     {
       emoji: "📤",
       name: "upload-release-assets",
-      description: "A GitHub Action to upload assets to a Release",
+      description: "A GitHub Action to upload assets to a GitHub Release",
       technologies: ["GitHub Actions", "CI/CD", "Automation"],
       link: "https://github.com/AButler/upload-release-assets",
     },
@@ -51,7 +51,7 @@ function App() {
         <div className="hero-content">
           <div className="hero-header">
             <img
-              src="https://www.gravatar.com/avatar/6a0cf973d68c8ebfcfec5cef7a49ef92?s=500"
+              src="https://www.gravatar.com/avatar/6a0cf973d68c8ebfcfec5cef7a49ef92?s=256"
               alt="Andrew Butler"
               className="profile-picture"
             />
@@ -79,7 +79,7 @@ function App() {
                   key={index}
                   href={project.link}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="project-card"
                 >
                   <div className="project-header">
@@ -115,7 +115,7 @@ function App() {
                     </div>
                   )}
                 </div>
-              ),
+              )
             )}
           </div>
         </section>
@@ -129,7 +129,7 @@ function App() {
             <a
               href="https://github.com/AButler"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="contact-link"
             >
               GitHub
@@ -137,7 +137,7 @@ function App() {
             <a
               href="https://www.linkedin.com/in/butlerat/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="contact-link"
             >
               LinkedIn
